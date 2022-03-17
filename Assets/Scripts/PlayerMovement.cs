@@ -128,5 +128,11 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector2(-92.33f, 2.76f);
         }
+
+        if (collision.gameObject.tag == "Trap2")
+        {
+            transform.position = new Vector2(-92.33f, 2.76f);
+        }
+
     }
 }
