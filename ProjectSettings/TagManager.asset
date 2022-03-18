@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Finish point
   - Trap2
+  - Finish game point
   layers:
   - Default
   - TransparentFX
