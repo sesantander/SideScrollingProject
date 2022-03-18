@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -134,5 +135,9 @@ public class PlayerMovement : MonoBehaviour
             transform.position = new Vector2(-92.33f, 2.76f);
         }
 
+        if (collision.gameObject.tag == "Finish game point")
+        {
+            SceneManager.LoadScene("EndGameScene");
+        }
     }
 }
